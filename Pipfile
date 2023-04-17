@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+flask = "*"
+
+[dev-packages]
+black = "*"
+
+[requires]
+python_version = "3.11"
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+dev = "bash -c \"export FLASK_DEBUG=1 && flask run\""
